@@ -1,3 +1,3 @@
 # echoCTF Documentations (Writeups and Tools)
 ## machines
-- (alister)[alister/README.md]
+- [alister](alister/README.md)
