@@ -1,4 +1,4 @@
-# Alister
+# echoctf's alister writeup <img src='_alister.png' width='25' />
 
 Alister combines a listing application with vulnerable configurations, offering an opportunity to explore common misconfigurations that could expose sensitive data or enable privilege escalation.
 
