@@ -1,0 +1,15 @@
+Hi,
+
+A new user account has been provisioned on the infrastructure server as requested.
+
+Username: james
+Password: J@m3sPhant0m#99
+Access: SSH (port 22)
+
+Please forward these credentials to the user and advise them to change their
+password upon first login. This is a temporary password and should be rotated
+within 48 hours.
+
+-- DevOps Team
+Phantom Infrastructure
+)

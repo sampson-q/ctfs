@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Fri Oct 30 08:10:54 2026 as: /usr/lib/nmap/nmap --privileged -sCV -p 22,43,110,143,993,995 -oA nmap/detail 10.10.112.17
+Host: 10.10.112.17 ()	Status: Up
+Host: 10.10.112.17 ()	Ports: 22/open/tcp//ssh//OpenSSH 9.2p1 Debian 2+deb12u10 (protocol 2.0)/, 43/open/tcp//whois?///, 110/open/tcp//pop3//Dovecot pop3d/, 143/open/tcp//imap//Dovecot imapd/, 993/open/tcp//imaps?///, 995/open/tcp//pop3s?///
+# Nmap done at Fri Oct 30 08:11:26 2026 -- 1 IP address (1 host up) scanned in 32.43 seconds

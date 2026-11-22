@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Fri Oct 30 08:10:54 2026 as: /usr/lib/nmap/nmap -&#45;privileged -sCV -p 22,43,110,143,993,995 -oA nmap/detail 10.10.112.17 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -sCV -p 22,43,110,143,993,995 -oA nmap/detail 10.10.112.17" start="1793362254" startstr="Fri Oct 30 08:10:54 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="6" services="22,43,110,143,993,995"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.112.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1793362255" endtime="1793362286"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.10.112.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" product="OpenSSH" version="9.2p1 Debian 2+deb12u10" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 31:b4:3a:75:50:28:40:ca:7b:52:c5:dc:62:21:ca:d5 (ECDSA)&#xa;  256 bc:04:1e:14:ee:7d:d8:56:fb:dd:a3:93:a5:56:e1:b2 (ED25519)"><table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJwFaHYKoWndp7NTJ/Om4Jw7zHCnstKVYmBv08HhTbkNzDExfa1ooMcWXJbo2YA+elhZSk24he58HfM3HJiNKn8=</elem>
+<elem key="fingerprint">31b43a75502840ca7b52c5dc6221cad5</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIMWHotx83QapKgSuokq8/ouiJByj2jlzODOFl31qTBAR</elem>
+<elem key="fingerprint">bc041e14ee7dd856fbdda393a556e1b2</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="43"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="whois" servicefp="SF-Port43-TCP:V=7.99%I=7%D=10/30%Time=6AE48955%P=x86_64-pc-linux-gnu%r(GenericLines,136,&quot;domain:\x20\x20\x20\x20\x20\x20\x20phantom\.ulfr\ndescr:\x20\x20\x20\x20\x20\x20\x20\x20Phantom\x20Internal\x20Infrastructure\x20Domain\nperson:\x20\x20\x20\x20\x20\x20\x20System\x20Administrator\ne-mail:\x20\x20\x20\x20\x20\x20\x20sysadmin@phantom\.ulfr\naddress:\x20\x20\x20\x20\x20\x20Phantom\x20Infrastructure,\x20Internal\x20Network\nphone:\x20\x20\x20\x20\x20\x20\x20\x20\+000-000-0000\ncreated:\x20\x20\x20\x20\x20\x202024-01-01\nlast-modified:\x202026-10-01\nsource:\x20\x20\x20\x20\x20\x20\x20PHANTOM-DB\n&quot;)%r(GetRequest,136,&quot;domain:\x20\x20\x20\x20\x20\x20\x20phantom\.ulfr\ndescr:\x20\x20\x20\x20\x20\x20\x20\x20Phantom\x20Internal\x20Infrastructure\x20Domain\nperson:\x20\x20\x20\x20\x20\x20\x20System\x20Administrator\ne-mail:\x20\x20\x20\x20\x20\x20\x20sysadmin@phantom\.ulfr\naddress:\x20\x20\x20\x20\x20\x20Phantom\x20Infrastructure,\x20Internal\x20Network\nphone:\x20\x20\x20\x20\x20\x20\x20\x20\+000-000-0000\ncreated:\x20\x20\x20\x20\x20\x202024-01-01\nlast-modified:\x202026-10-01\nsource:\x20\x20\x20\x20\x20\x20\x20PHANTOM-DB\n&quot;)%r(HTTPOptions,136,&quot;domain:\x20\x20\x20\x20\x20\x20\x20phantom\.ulfr\ndescr:\x20\x20\x20\x20\x20\x20\x20\x20Phantom\x20Internal\x20Infrastructure\x20Domain\nperson:\x20\x20\x20\x20\x20\x20\x20System\x20Administrator\ne-mail:\x20\x20\x20\x20\x20\x20\x20sysadmin@phantom\.ulfr\naddress:\x20\x20\x20\x20\x20\x20Phantom\x20Infrastructure,\x20Internal\x20Network\nphone:\x20\x20\x20\x20\x20\x20\x20\x20\+000-000-0000\ncreated:\x20\x20\x20\x20\x20\x202024-01-01\nlast-modified:\x202026-10-01\nsource:\x20\x20\x20\x20\x20\x20\x20PHANTOM-DB\n&quot;)%r(RTSPRequest,136,&quot;domain:\x20\x20\x20\x20\x20\x20\x20phantom\.ulfr\ndescr:\x20\x20\x20\x20\x20\x20\x20\x20Phantom\x20Internal\x20Infrastructure\x20Domain\nperson:\x20\x20\x20\x20\x20\x20\x20System\x20Administrator\ne-mail:\x20\x20\x20\x20\x20\x20\x20sysadmin@phantom\.ulfr\naddress:\x20\x20\x20\x20\x20\x20Phantom\x20Infrastructure,\x20Internal\x20Network\nphone:\x20\x20\x20\x20\x20\x20\x20\x20\+000-000-0000\ncreated:\x20\x20\x20\x20\x20\x202024-01-01\nlast-modified:\x202026-10-01\nsource:\x20\x20\x20\x20\x20\x20\x20PHANTOM-DB\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines, GetRequest, HTTPOptions, RTSPRequest: &#xa;    domain: phantom.ulfr&#xa;    descr: Phantom Internal Infrastructure Domain&#xa;    person: System Administrator&#xa;    e-mail: sysadmin@phantom.ulfr&#xa;    address: Phantom Infrastructure, Internal Network&#xa;    phone: +000-000-0000&#xa;    created: 2024-01-01&#xa;    last-modified: 2026-10-01&#xa;    source: PHANTOM-DB"><elem key="GenericLines, GetRequest, HTTPOptions, RTSPRequest">&#xa;    domain: phantom.ulfr&#xa;    descr: Phantom Internal Infrastructure Domain&#xa;    person: System Administrator&#xa;    e-mail: sysadmin@phantom.ulfr&#xa;    address: Phantom Infrastructure, Internal Network&#xa;    phone: +000-000-0000&#xa;    created: 2024-01-01&#xa;    last-modified: 2026-10-01&#xa;    source: PHANTOM-DB</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="AUTH-RESP-CODE USER SASL(PLAIN LOGIN) CAPA STLS UIDL RESP-CODES PIPELINING TOP"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=phantom-build&#xa;Subject Alternative Name: DNS:phantom-build&#xa;Not valid before: 2026-10-11T09:18:56&#xa;Not valid after:  2036-10-08T09:18:56"><table key="subject">
+<elem key="commonName">phantom-build</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">phantom-build</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">97B9CDFE943005C4C6C9635E0F3420E597C496D8E77A53DAC34DC2A5F70D39D64C21199BE1F2B1886903C5C2BEA7216447E0723EB16B2CE85C61B1ED68F75F8F79F671B6BCEBBF8D41EFDB535FDA13A6D7BCC661C312002DFA0F1CC2673A4D593D260A2AC89DAD5D702DAA54384DA756A879F2291152864DA48A1C7D600AAE0137165FA56FECE8249091F2638B6E13F64F9C625A8A9E971CE863B93E849246A5D371B0A35674A1607A900EA7084316818CFEAA25C01C5D77FAEEB0F6B4FC3E53AF47A1320F07A4163B35A7CDD6F33764B7F4744D7C8214EF4683FD979520E61BB850D05C394C9BD25D41F3C4C69A852E914DCC60EBC48CA72CE8E93C67118541</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:phantom-build</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">30:74:21:0E:F3:4C:10:56:C8:49:36:9C:DA:E3:2A:50:A5:7F:C9:72</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-10-11T09:18:56</elem>
+<elem key="notAfter">2036-10-08T09:18:56</elem>
+</table>
+<elem key="md5">b7362ce245c5d7714bd89e90d2127a5d</elem>
+<elem key="sha1">3473a02424c1061b90dcc8d36b7a7cb65ab9d20f</elem>
+<elem key="sha256">6495b8dd3695f2fc95fdea5dd85a66ec39d9530a7a70a78c6fca6e6fd76abca3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDBDCCAeygAwIBAgIUTq2CuJ5Dty/ZjyqHTAYPGPAuVekwDQYJKoZIhvcNAQEL&#xa;BQAwGDEWMBQGA1UEAwwNcGhhbnRvbS1idWlsZDAeFw0yNjEwMTEwOTE4NTZaFw0z&#xa;NjEwMDgwOTE4NTZaMBgxFjAUBgNVBAMMDXBoYW50b20tYnVpbGQwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCXuc3+lDAFxMbJY14PNCDll8SW2Od6U9rD&#xa;TcKl9w051kwhGZvh8rGIaQPFwr6nIWRH4HI+sWss6Fxhse1o91+PefZxtrzrv41B&#xa;79tTX9oTpte8xmHDEgAt+g8cwmc6TVk9JgoqyJ2tXXAtqlQ4TadWqHnyKRFShk2k&#xa;ihx9YAquATcWX6Vv7OgkkJHyY4tuE/ZPnGJaip6XHOhjuT6Ekkal03Gwo1Z0oWB6&#xa;kA6nCEMWgYz+qiXAHF13+u6w9rT8PlOvR6EyDwekFjs1p83W8zdkt/R0TXyCFO9G&#xa;g/2XlSDmG7hQ0Fw5TJvSXUHzxMaahS6RTcxg68SMpyzo6TxnEYVBAgMBAAGjRjBE&#xa;MAkGA1UdEwQCMAAwGAYDVR0RBBEwD4INcGhhbnRvbS1idWlsZDAdBgNVHQ4EFgQU&#xa;MHQhDvNMEFbISTac2uMqUKV/yXIwDQYJKoZIhvcNAQELBQADggEBAAa33WbeeYzd&#xa;GUqCzazSzdJohR5//yuxqQdr6Fn7CWsIcxaq1v5FxsZBwBD+hMdJd12kP0u6DP1D&#xa;XmIpzLmkc3ema1B2R/1r546/625BKp1PuA+rzicCT2CTYtoSj8RWuhqrE8804Qoq&#xa;NlPR4OdIaGLqUdavES/RW/45AXpDeOr/1b6iw2MqxD8BKJu/RoSiRftgXcCmD0jx&#xa;B0iZB7cMqHM8kl3fXuW+BdOcMyZOIoRm+jBv4UZTOKdrU9CgSlyj5IS+Dd8Je+K3&#xa;FuBKfwwwVu2Xax6Vs+b+5ilB4P/sGxX53dnSdyghrg/RYigq2RrztvMeNUhx8z8V&#xa;J9CXJDLIRlc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="ssl-cert" output="Subject: commonName=phantom-build&#xa;Subject Alternative Name: DNS:phantom-build&#xa;Not valid before: 2026-10-11T09:18:56&#xa;Not valid after:  2036-10-08T09:18:56"><table key="subject">
+<elem key="commonName">phantom-build</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">phantom-build</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">97B9CDFE943005C4C6C9635E0F3420E597C496D8E77A53DAC34DC2A5F70D39D64C21199BE1F2B1886903C5C2BEA7216447E0723EB16B2CE85C61B1ED68F75F8F79F671B6BCEBBF8D41EFDB535FDA13A6D7BCC661C312002DFA0F1CC2673A4D593D260A2AC89DAD5D702DAA54384DA756A879F2291152864DA48A1C7D600AAE0137165FA56FECE8249091F2638B6E13F64F9C625A8A9E971CE863B93E849246A5D371B0A35674A1607A900EA7084316818CFEAA25C01C5D77FAEEB0F6B4FC3E53AF47A1320F07A4163B35A7CDD6F33764B7F4744D7C8214EF4683FD979520E61BB850D05C394C9BD25D41F3C4C69A852E914DCC60EBC48CA72CE8E93C67118541</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:phantom-build</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">30:74:21:0E:F3:4C:10:56:C8:49:36:9C:DA:E3:2A:50:A5:7F:C9:72</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-10-11T09:18:56</elem>
+<elem key="notAfter">2036-10-08T09:18:56</elem>
+</table>
+<elem key="md5">b7362ce245c5d7714bd89e90d2127a5d</elem>
+<elem key="sha1">3473a02424c1061b90dcc8d36b7a7cb65ab9d20f</elem>
+<elem key="sha256">6495b8dd3695f2fc95fdea5dd85a66ec39d9530a7a70a78c6fca6e6fd76abca3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDBDCCAeygAwIBAgIUTq2CuJ5Dty/ZjyqHTAYPGPAuVekwDQYJKoZIhvcNAQEL&#xa;BQAwGDEWMBQGA1UEAwwNcGhhbnRvbS1idWlsZDAeFw0yNjEwMTEwOTE4NTZaFw0z&#xa;NjEwMDgwOTE4NTZaMBgxFjAUBgNVBAMMDXBoYW50b20tYnVpbGQwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCXuc3+lDAFxMbJY14PNCDll8SW2Od6U9rD&#xa;TcKl9w051kwhGZvh8rGIaQPFwr6nIWRH4HI+sWss6Fxhse1o91+PefZxtrzrv41B&#xa;79tTX9oTpte8xmHDEgAt+g8cwmc6TVk9JgoqyJ2tXXAtqlQ4TadWqHnyKRFShk2k&#xa;ihx9YAquATcWX6Vv7OgkkJHyY4tuE/ZPnGJaip6XHOhjuT6Ekkal03Gwo1Z0oWB6&#xa;kA6nCEMWgYz+qiXAHF13+u6w9rT8PlOvR6EyDwekFjs1p83W8zdkt/R0TXyCFO9G&#xa;g/2XlSDmG7hQ0Fw5TJvSXUHzxMaahS6RTcxg68SMpyzo6TxnEYVBAgMBAAGjRjBE&#xa;MAkGA1UdEwQCMAAwGAYDVR0RBBEwD4INcGhhbnRvbS1idWlsZDAdBgNVHQ4EFgQU&#xa;MHQhDvNMEFbISTac2uMqUKV/yXIwDQYJKoZIhvcNAQELBQADggEBAAa33WbeeYzd&#xa;GUqCzazSzdJohR5//yuxqQdr6Fn7CWsIcxaq1v5FxsZBwBD+hMdJd12kP0u6DP1D&#xa;XmIpzLmkc3ema1B2R/1r546/625BKp1PuA+rzicCT2CTYtoSj8RWuhqrE8804Qoq&#xa;NlPR4OdIaGLqUdavES/RW/45AXpDeOr/1b6iw2MqxD8BKJu/RoSiRftgXcCmD0jx&#xa;B0iZB7cMqHM8kl3fXuW+BdOcMyZOIoRm+jBv4UZTOKdrU9CgSlyj5IS+Dd8Je+K3&#xa;FuBKfwwwVu2Xax6Vs+b+5ilB4P/sGxX53dnSdyghrg/RYigq2RrztvMeNUhx8z8V&#xa;J9CXJDLIRlc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="imap-capabilities" output="OK IMAP4rev1 IDLE have ENABLE listed AUTH=LOGINA0001 SASL-IR more ID STARTTLS Pre-login capabilities LOGIN-REFERRALS AUTH=PLAIN LITERAL+ post-login"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="imaps" method="table" conf="3"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="imap-capabilities" output="AUTH=LOGINA0001 OK SASL-IR have more IMAP4rev1 ID IDLE post-login LITERAL+ capabilities ENABLE AUTH=PLAIN listed Pre-login LOGIN-REFERRALS"/><script id="ssl-cert" output="Subject: commonName=phantom-build&#xa;Subject Alternative Name: DNS:phantom-build&#xa;Not valid before: 2026-10-11T09:18:56&#xa;Not valid after:  2036-10-08T09:18:56"><table key="subject">
+<elem key="commonName">phantom-build</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">phantom-build</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">97B9CDFE943005C4C6C9635E0F3420E597C496D8E77A53DAC34DC2A5F70D39D64C21199BE1F2B1886903C5C2BEA7216447E0723EB16B2CE85C61B1ED68F75F8F79F671B6BCEBBF8D41EFDB535FDA13A6D7BCC661C312002DFA0F1CC2673A4D593D260A2AC89DAD5D702DAA54384DA756A879F2291152864DA48A1C7D600AAE0137165FA56FECE8249091F2638B6E13F64F9C625A8A9E971CE863B93E849246A5D371B0A35674A1607A900EA7084316818CFEAA25C01C5D77FAEEB0F6B4FC3E53AF47A1320F07A4163B35A7CDD6F33764B7F4744D7C8214EF4683FD979520E61BB850D05C394C9BD25D41F3C4C69A852E914DCC60EBC48CA72CE8E93C67118541</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:phantom-build</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">30:74:21:0E:F3:4C:10:56:C8:49:36:9C:DA:E3:2A:50:A5:7F:C9:72</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-10-11T09:18:56</elem>
+<elem key="notAfter">2036-10-08T09:18:56</elem>
+</table>
+<elem key="md5">b7362ce245c5d7714bd89e90d2127a5d</elem>
+<elem key="sha1">3473a02424c1061b90dcc8d36b7a7cb65ab9d20f</elem>
+<elem key="sha256">6495b8dd3695f2fc95fdea5dd85a66ec39d9530a7a70a78c6fca6e6fd76abca3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDBDCCAeygAwIBAgIUTq2CuJ5Dty/ZjyqHTAYPGPAuVekwDQYJKoZIhvcNAQEL&#xa;BQAwGDEWMBQGA1UEAwwNcGhhbnRvbS1idWlsZDAeFw0yNjEwMTEwOTE4NTZaFw0z&#xa;NjEwMDgwOTE4NTZaMBgxFjAUBgNVBAMMDXBoYW50b20tYnVpbGQwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCXuc3+lDAFxMbJY14PNCDll8SW2Od6U9rD&#xa;TcKl9w051kwhGZvh8rGIaQPFwr6nIWRH4HI+sWss6Fxhse1o91+PefZxtrzrv41B&#xa;79tTX9oTpte8xmHDEgAt+g8cwmc6TVk9JgoqyJ2tXXAtqlQ4TadWqHnyKRFShk2k&#xa;ihx9YAquATcWX6Vv7OgkkJHyY4tuE/ZPnGJaip6XHOhjuT6Ekkal03Gwo1Z0oWB6&#xa;kA6nCEMWgYz+qiXAHF13+u6w9rT8PlOvR6EyDwekFjs1p83W8zdkt/R0TXyCFO9G&#xa;g/2XlSDmG7hQ0Fw5TJvSXUHzxMaahS6RTcxg68SMpyzo6TxnEYVBAgMBAAGjRjBE&#xa;MAkGA1UdEwQCMAAwGAYDVR0RBBEwD4INcGhhbnRvbS1idWlsZDAdBgNVHQ4EFgQU&#xa;MHQhDvNMEFbISTac2uMqUKV/yXIwDQYJKoZIhvcNAQELBQADggEBAAa33WbeeYzd&#xa;GUqCzazSzdJohR5//yuxqQdr6Fn7CWsIcxaq1v5FxsZBwBD+hMdJd12kP0u6DP1D&#xa;XmIpzLmkc3ema1B2R/1r546/625BKp1PuA+rzicCT2CTYtoSj8RWuhqrE8804Qoq&#xa;NlPR4OdIaGLqUdavES/RW/45AXpDeOr/1b6iw2MqxD8BKJu/RoSiRftgXcCmD0jx&#xa;B0iZB7cMqHM8kl3fXuW+BdOcMyZOIoRm+jBv4UZTOKdrU9CgSlyj5IS+Dd8Je+K3&#xa;FuBKfwwwVu2Xax6Vs+b+5ilB4P/sGxX53dnSdyghrg/RYigq2RrztvMeNUhx8z8V&#xa;J9CXJDLIRlc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="pop3s" method="table" conf="3"/><script id="pop3-capabilities" output="UIDL USER CAPA TOP AUTH-RESP-CODE RESP-CODES PIPELINING SASL(PLAIN LOGIN)"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=phantom-build&#xa;Subject Alternative Name: DNS:phantom-build&#xa;Not valid before: 2026-10-11T09:18:56&#xa;Not valid after:  2036-10-08T09:18:56"><table key="subject">
+<elem key="commonName">phantom-build</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">phantom-build</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">97B9CDFE943005C4C6C9635E0F3420E597C496D8E77A53DAC34DC2A5F70D39D64C21199BE1F2B1886903C5C2BEA7216447E0723EB16B2CE85C61B1ED68F75F8F79F671B6BCEBBF8D41EFDB535FDA13A6D7BCC661C312002DFA0F1CC2673A4D593D260A2AC89DAD5D702DAA54384DA756A879F2291152864DA48A1C7D600AAE0137165FA56FECE8249091F2638B6E13F64F9C625A8A9E971CE863B93E849246A5D371B0A35674A1607A900EA7084316818CFEAA25C01C5D77FAEEB0F6B4FC3E53AF47A1320F07A4163B35A7CDD6F33764B7F4744D7C8214EF4683FD979520E61BB850D05C394C9BD25D41F3C4C69A852E914DCC60EBC48CA72CE8E93C67118541</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:phantom-build</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">30:74:21:0E:F3:4C:10:56:C8:49:36:9C:DA:E3:2A:50:A5:7F:C9:72</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-10-11T09:18:56</elem>
+<elem key="notAfter">2036-10-08T09:18:56</elem>
+</table>
+<elem key="md5">b7362ce245c5d7714bd89e90d2127a5d</elem>
+<elem key="sha1">3473a02424c1061b90dcc8d36b7a7cb65ab9d20f</elem>
+<elem key="sha256">6495b8dd3695f2fc95fdea5dd85a66ec39d9530a7a70a78c6fca6e6fd76abca3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDBDCCAeygAwIBAgIUTq2CuJ5Dty/ZjyqHTAYPGPAuVekwDQYJKoZIhvcNAQEL&#xa;BQAwGDEWMBQGA1UEAwwNcGhhbnRvbS1idWlsZDAeFw0yNjEwMTEwOTE4NTZaFw0z&#xa;NjEwMDgwOTE4NTZaMBgxFjAUBgNVBAMMDXBoYW50b20tYnVpbGQwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCXuc3+lDAFxMbJY14PNCDll8SW2Od6U9rD&#xa;TcKl9w051kwhGZvh8rGIaQPFwr6nIWRH4HI+sWss6Fxhse1o91+PefZxtrzrv41B&#xa;79tTX9oTpte8xmHDEgAt+g8cwmc6TVk9JgoqyJ2tXXAtqlQ4TadWqHnyKRFShk2k&#xa;ihx9YAquATcWX6Vv7OgkkJHyY4tuE/ZPnGJaip6XHOhjuT6Ekkal03Gwo1Z0oWB6&#xa;kA6nCEMWgYz+qiXAHF13+u6w9rT8PlOvR6EyDwekFjs1p83W8zdkt/R0TXyCFO9G&#xa;g/2XlSDmG7hQ0Fw5TJvSXUHzxMaahS6RTcxg68SMpyzo6TxnEYVBAgMBAAGjRjBE&#xa;MAkGA1UdEwQCMAAwGAYDVR0RBBEwD4INcGhhbnRvbS1idWlsZDAdBgNVHQ4EFgQU&#xa;MHQhDvNMEFbISTac2uMqUKV/yXIwDQYJKoZIhvcNAQELBQADggEBAAa33WbeeYzd&#xa;GUqCzazSzdJohR5//yuxqQdr6Fn7CWsIcxaq1v5FxsZBwBD+hMdJd12kP0u6DP1D&#xa;XmIpzLmkc3ema1B2R/1r546/625BKp1PuA+rzicCT2CTYtoSj8RWuhqrE8804Qoq&#xa;NlPR4OdIaGLqUdavES/RW/45AXpDeOr/1b6iw2MqxD8BKJu/RoSiRftgXcCmD0jx&#xa;B0iZB7cMqHM8kl3fXuW+BdOcMyZOIoRm+jBv4UZTOKdrU9CgSlyj5IS+Dd8Je+K3&#xa;FuBKfwwwVu2Xax6Vs+b+5ilB4P/sGxX53dnSdyghrg/RYigq2RrztvMeNUhx8z8V&#xa;J9CXJDLIRlc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="135893" rttvar="29844" to="255269"/>
+</host>
+<runstats><finished time="1793362286" timestr="Fri Oct 30 08:11:26 2026" summary="Nmap done at Fri Oct 30 08:11:26 2026; 1 IP address (1 host up) scanned in 32.43 seconds" elapsed="32.43" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

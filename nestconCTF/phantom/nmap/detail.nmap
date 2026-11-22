@@ -1,0 +1,86 @@
+# Nmap 7.99 scan initiated Fri Oct 30 08:10:54 2026 as: /usr/lib/nmap/nmap --privileged -sCV -p 22,43,110,143,993,995 -oA nmap/detail 10.10.112.17
+Nmap scan report for 10.10.112.17
+Host is up (0.14s latency).
+
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 9.2p1 Debian 2+deb12u10 (protocol 2.0)
+| ssh-hostkey: 
+|   256 31:b4:3a:75:50:28:40:ca:7b:52:c5:dc:62:21:ca:d5 (ECDSA)
+|_  256 bc:04:1e:14:ee:7d:d8:56:fb:dd:a3:93:a5:56:e1:b2 (ED25519)
+43/tcp  open  whois?
+| fingerprint-strings: 
+|   GenericLines, GetRequest, HTTPOptions, RTSPRequest: 
+|     domain: phantom.ulfr
+|     descr: Phantom Internal Infrastructure Domain
+|     person: System Administrator
+|     e-mail: sysadmin@phantom.ulfr
+|     address: Phantom Infrastructure, Internal Network
+|     phone: +000-000-0000
+|     created: 2024-01-01
+|     last-modified: 2026-10-01
+|_    source: PHANTOM-DB
+110/tcp open  pop3    Dovecot pop3d
+|_pop3-capabilities: AUTH-RESP-CODE USER SASL(PLAIN LOGIN) CAPA STLS UIDL RESP-CODES PIPELINING TOP
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=phantom-build
+| Subject Alternative Name: DNS:phantom-build
+| Not valid before: 2026-10-11T09:18:56
+|_Not valid after:  2036-10-08T09:18:56
+143/tcp open  imap    Dovecot imapd
+| ssl-cert: Subject: commonName=phantom-build
+| Subject Alternative Name: DNS:phantom-build
+| Not valid before: 2026-10-11T09:18:56
+|_Not valid after:  2036-10-08T09:18:56
+|_ssl-date: TLS randomness does not represent time
+|_imap-capabilities: OK IMAP4rev1 IDLE have ENABLE listed AUTH=LOGINA0001 SASL-IR more ID STARTTLS Pre-login capabilities LOGIN-REFERRALS AUTH=PLAIN LITERAL+ post-login
+993/tcp open  imaps?
+|_ssl-date: TLS randomness does not represent time
+|_imap-capabilities: AUTH=LOGINA0001 OK SASL-IR have more IMAP4rev1 ID IDLE post-login LITERAL+ capabilities ENABLE AUTH=PLAIN listed Pre-login LOGIN-REFERRALS
+| ssl-cert: Subject: commonName=phantom-build
+| Subject Alternative Name: DNS:phantom-build
+| Not valid before: 2026-10-11T09:18:56
+|_Not valid after:  2036-10-08T09:18:56
+995/tcp open  pop3s?
+|_pop3-capabilities: UIDL USER CAPA TOP AUTH-RESP-CODE RESP-CODES PIPELINING SASL(PLAIN LOGIN)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=phantom-build
+| Subject Alternative Name: DNS:phantom-build
+| Not valid before: 2026-10-11T09:18:56
+|_Not valid after:  2036-10-08T09:18:56
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port43-TCP:V=7.99%I=7%D=10/30%Time=6AE48955%P=x86_64-pc-linux-gnu%r(Gen
+SF:ericLines,136,"domain:\x20\x20\x20\x20\x20\x20\x20phantom\.ulfr\ndescr:
+SF:\x20\x20\x20\x20\x20\x20\x20\x20Phantom\x20Internal\x20Infrastructure\x
+SF:20Domain\nperson:\x20\x20\x20\x20\x20\x20\x20System\x20Administrator\ne
+SF:-mail:\x20\x20\x20\x20\x20\x20\x20sysadmin@phantom\.ulfr\naddress:\x20\
+SF:x20\x20\x20\x20\x20Phantom\x20Infrastructure,\x20Internal\x20Network\np
+SF:hone:\x20\x20\x20\x20\x20\x20\x20\x20\+000-000-0000\ncreated:\x20\x20\x
+SF:20\x20\x20\x202024-01-01\nlast-modified:\x202026-10-01\nsource:\x20\x20
+SF:\x20\x20\x20\x20\x20PHANTOM-DB\n")%r(GetRequest,136,"domain:\x20\x20\x2
+SF:0\x20\x20\x20\x20phantom\.ulfr\ndescr:\x20\x20\x20\x20\x20\x20\x20\x20P
+SF:hantom\x20Internal\x20Infrastructure\x20Domain\nperson:\x20\x20\x20\x20
+SF:\x20\x20\x20System\x20Administrator\ne-mail:\x20\x20\x20\x20\x20\x20\x2
+SF:0sysadmin@phantom\.ulfr\naddress:\x20\x20\x20\x20\x20\x20Phantom\x20Inf
+SF:rastructure,\x20Internal\x20Network\nphone:\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\+000-000-0000\ncreated:\x20\x20\x20\x20\x20\x202024-01-01\nlast-mo
+SF:dified:\x202026-10-01\nsource:\x20\x20\x20\x20\x20\x20\x20PHANTOM-DB\n"
+SF:)%r(HTTPOptions,136,"domain:\x20\x20\x20\x20\x20\x20\x20phantom\.ulfr\n
+SF:descr:\x20\x20\x20\x20\x20\x20\x20\x20Phantom\x20Internal\x20Infrastruc
+SF:ture\x20Domain\nperson:\x20\x20\x20\x20\x20\x20\x20System\x20Administra
+SF:tor\ne-mail:\x20\x20\x20\x20\x20\x20\x20sysadmin@phantom\.ulfr\naddress
+SF::\x20\x20\x20\x20\x20\x20Phantom\x20Infrastructure,\x20Internal\x20Netw
+SF:ork\nphone:\x20\x20\x20\x20\x20\x20\x20\x20\+000-000-0000\ncreated:\x20
+SF:\x20\x20\x20\x20\x202024-01-01\nlast-modified:\x202026-10-01\nsource:\x
+SF:20\x20\x20\x20\x20\x20\x20PHANTOM-DB\n")%r(RTSPRequest,136,"domain:\x20
+SF:\x20\x20\x20\x20\x20\x20phantom\.ulfr\ndescr:\x20\x20\x20\x20\x20\x20\x
+SF:20\x20Phantom\x20Internal\x20Infrastructure\x20Domain\nperson:\x20\x20\
+SF:x20\x20\x20\x20\x20System\x20Administrator\ne-mail:\x20\x20\x20\x20\x20
+SF:\x20\x20sysadmin@phantom\.ulfr\naddress:\x20\x20\x20\x20\x20\x20Phantom
+SF:\x20Infrastructure,\x20Internal\x20Network\nphone:\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\+000-000-0000\ncreated:\x20\x20\x20\x20\x20\x202024-01-01\n
+SF:last-modified:\x202026-10-01\nsource:\x20\x20\x20\x20\x20\x20\x20PHANTO
+SF:M-DB\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct 30 08:11:26 2026 -- 1 IP address (1 host up) scanned in 32.43 seconds
